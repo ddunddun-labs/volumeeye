@@ -19,6 +19,6 @@ main{margin:0 auto;align-self:start}
 .chart-heading{padding-bottom:17px;border-bottom:1px solid var(--line)}
 .chart-tools{margin:16px 0 14px}
 .chart-footer{border-top:1px solid var(--line)}
-@media(max-width:700px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));border-bottom:0;margin-bottom:25px}.card{padding:14px 10px;border-bottom:1px solid var(--line)}.card:nth-child(2n):before{display:none}.card+.card:before{top:14px;bottom:14px}.card-value{font-size:23px}.card-bottom{font-size:9px;flex-wrap:wrap}.chart-heading{padding-bottom:13px}}
+@media(max-width:700px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));border-bottom:0;margin-bottom:25px}.card{padding:14px 10px;border-bottom:1px solid var(--line)}.card:nth-child(2n+1):before{display:none}.card+.card:before{top:14px;bottom:14px}.card-value{font-size:23px}.card-bottom{font-size:9px;flex-wrap:wrap}.chart-heading{padding-bottom:13px}}
 
 .card-bottom{flex-wrap:wrap;row-gap:6px}
