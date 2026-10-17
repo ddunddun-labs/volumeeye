@@ -1,0 +1,4 @@
+import {writeFile} from 'node:fs/promises';
+let seed=42;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
+const rows=[];for(let i=0;i<540;i++){const date=new Date(Date.UTC(2025,3,25+i));const day=date.getUTCDay();const wave=1+Math.sin(i/45)*.22+Math.exp(-(((i-350)/60)**2))*1.1;const n=()=>.75+random()*.5;const unit=1e12;const row={date:date.toISOString().slice(0,10),kospi:day===0||day===6?null:Math.round(12*wave*n()*unit),kosdaq:day===0||day===6?null:Math.round(6*(1+Math.sin(i/60)*.3)*n()*unit),upbit:Math.round(2.8*(1+Math.sin(i/35)*.4)*n()*unit),bithumb:Math.round(1.5*(1+Math.sin(i/35)*.4)*n()*unit),binance:Math.round(15*(1+Math.sin(i/52)*.3)*n()*unit)};rows.push(row);}
+await writeFile('public/data/market-daily.json',JSON.stringify({schemaVersion:1,isSample:true,updatedAt:'2026-10-17T09:00:00+09:00',metadata:{unit:'KRW',marketType:'spot',sources:'가상 샘플',dateBoundary:'샘플: 날짜별 가상 수치',conversion:'샘플: KRW 가상 수치'},rows},null,2)+'\n');

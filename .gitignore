@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.cliagent-room/
+.cursor/
+.codex/
+.agents/
+.aws/
+.mcp.json
+.local/
+.env
+.env.*
+*.tmp
+*.log
