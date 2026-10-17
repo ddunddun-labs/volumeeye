@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "isSample": false,
-  "updatedAt": "2026-10-17T20:53:49.6810409+09:00",
+  "updatedAt": "2026-10-17T22:58:44.8008372+09:00",
   "metadata": {
     "unit": "KRW",
     "marketType": "spot",
@@ -47817,7 +47817,7 @@
       "kosdaq": null,
       "upbit": 878004808285,
       "bithumb": null,
-      "binance": 346068906275
+      "binance": 350876435401
     },
     {
       "date": "2026-06-21",
@@ -48497,7 +48497,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 62246972
     },
     {
       "date": "2026-09-14",
@@ -48505,7 +48505,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 86656237
     },
     {
       "date": "2026-09-15",
@@ -48513,7 +48513,7 @@
       "kosdaq": 6524335000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 382078947
     },
     {
       "date": "2026-09-16",
@@ -48521,7 +48521,7 @@
       "kosdaq": 6573258000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 143054645
     },
     {
       "date": "2026-09-17",
@@ -48529,7 +48529,7 @@
       "kosdaq": 6080481000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 204152607
     },
     {
       "date": "2026-09-18",
@@ -48537,7 +48537,7 @@
       "kosdaq": 7590852000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 6757628882
     },
     {
       "date": "2026-09-19",
@@ -48545,7 +48545,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 3226832003
     },
     {
       "date": "2026-09-20",
@@ -48553,7 +48553,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 2873562263
     },
     {
       "date": "2026-09-21",
@@ -48561,7 +48561,7 @@
       "kosdaq": 8133397000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 1016273228
     },
     {
       "date": "2026-09-22",
@@ -48569,7 +48569,7 @@
       "kosdaq": 8500047000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 2077128052
     },
     {
       "date": "2026-09-23",
@@ -48577,7 +48577,7 @@
       "kosdaq": 8086910000000,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 3684263237
     },
     {
       "date": "2026-09-24",
@@ -48585,7 +48585,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 3029944641
     },
     {
       "date": "2026-09-25",
@@ -48593,7 +48593,7 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 1472569666
     },
     {
       "date": "2026-09-26",
@@ -48601,167 +48601,167 @@
       "kosdaq": null,
       "upbit": null,
       "bithumb": null,
-      "binance": null
+      "binance": 820754822
     },
     {
       "date": "2026-09-27",
       "kospi": null,
       "kosdaq": null,
       "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "bithumb": 1014161267390,
+      "binance": 468450840
     },
     {
       "date": "2026-09-28",
       "kospi": 23048680000000,
       "kosdaq": 6334789000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 2520831504266,
+      "bithumb": 753700761139,
+      "binance": 12880865858411
     },
     {
       "date": "2026-09-29",
       "kospi": 18963537000000,
       "kosdaq": 8035983000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1826736997694,
+      "bithumb": 805535443622,
+      "binance": 10826603394443
     },
     {
       "date": "2026-09-30",
       "kospi": 20477180000000,
       "kosdaq": 7771793000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1809043510920,
+      "bithumb": 613125003141,
+      "binance": 10901934572138
     },
     {
       "date": "2026-10-01",
       "kospi": 18165653000000,
       "kosdaq": 8884481000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1458391225494,
+      "bithumb": 833922830575,
+      "binance": 11849966484488
     },
     {
       "date": "2026-10-02",
       "kospi": 15981136000000,
       "kosdaq": 8846913000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 2232598044276,
+      "bithumb": 716262607663,
+      "binance": 14357764569727
     },
     {
       "date": "2026-10-03",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1206315108130,
+      "bithumb": 408528544386,
+      "binance": 4831830481118
     },
     {
       "date": "2026-10-04",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1194944584247,
+      "bithumb": 660581371269,
+      "binance": 4332919984643
     },
     {
       "date": "2026-10-05",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1351347204159,
+      "bithumb": 596985264158,
+      "binance": 11094510260785
     },
     {
       "date": "2026-10-06",
       "kospi": 20077939000000,
       "kosdaq": 9344938000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1338723511093,
+      "bithumb": 807033670876,
+      "binance": 8662958566330
     },
     {
       "date": "2026-10-07",
       "kospi": 20576543000000,
       "kosdaq": 8334829000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1876340273553,
+      "bithumb": 714751651049,
+      "binance": 12964908722212
     },
     {
       "date": "2026-10-08",
       "kospi": 24376305000000,
       "kosdaq": 8060445000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1905042733742,
+      "bithumb": 1131323879282,
+      "binance": 14177385961539
     },
     {
       "date": "2026-10-09",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1233969214000,
+      "bithumb": 847482329782,
+      "binance": 8629869076059
     },
     {
       "date": "2026-10-10",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1004062690216,
+      "bithumb": 745504567654,
+      "binance": 5404315751579
     },
     {
       "date": "2026-10-11",
       "kospi": null,
       "kosdaq": null,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1054938585217,
+      "bithumb": 814537632082,
+      "binance": 6117358737527
     },
     {
       "date": "2026-10-12",
       "kospi": 22871052000000,
       "kosdaq": 6811395000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1729866157832,
+      "bithumb": 822558195014,
+      "binance": 10864959436334
     },
     {
       "date": "2026-10-13",
       "kospi": 28452295000000,
       "kosdaq": 7241090000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1311964832994,
+      "bithumb": 653780427835,
+      "binance": 10959232550650
     },
     {
       "date": "2026-10-14",
       "kospi": 21390191000000,
       "kosdaq": 6165148000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1186525662311,
+      "bithumb": 724255116026,
+      "binance": 10442191590767
     },
     {
       "date": "2026-10-15",
       "kospi": 28639947000000,
       "kosdaq": 7032944000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 1673214667269,
+      "bithumb": 523359459512,
+      "binance": 12717123952481
     },
     {
       "date": "2026-10-16",
       "kospi": 20945426000000,
       "kosdaq": 6025907000000,
-      "upbit": null,
-      "bithumb": null,
-      "binance": null
+      "upbit": 966937606732,
+      "bithumb": 366971969907,
+      "binance": 9720431717589
     }
   ]
 }
