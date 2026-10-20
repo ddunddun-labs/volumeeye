@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "isSample": false,
-  "updatedAt": "2026-10-20T16:25:49.5323562+09:00",
+  "updatedAt": "2026-10-21T07:51:56.6239525+09:00",
   "metadata": {
     "unit": "KRW",
     "marketType": "spot",
@@ -48783,9 +48783,17 @@
       "date": "2026-10-19",
       "kospi": 20005585000000,
       "kosdaq": 5031564000000,
-      "upbit": 700201767776,
-      "bithumb": 120567852815,
-      "binance": 8836394404933
+      "upbit": 721740890919,
+      "bithumb": 881289600807,
+      "binance": 8974157689678
+    },
+    {
+      "date": "2026-10-20",
+      "kospi": 17054915000000,
+      "kosdaq": 5381245000000,
+      "upbit": null,
+      "bithumb": null,
+      "binance": null
     }
   ]
 }
