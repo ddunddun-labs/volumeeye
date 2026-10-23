@@ -23,6 +23,8 @@ main{margin:0 auto;align-self:start}
 
 .card-bottom{flex-wrap:wrap;row-gap:6px}
 
+.empty{pointer-events:none}
+
 /* The plot grows into the remaining viewport; the canvas never sets its parent's height. */
 :root{--header-height:83px}
 .shell{min-height:calc(100vh - var(--header-height));min-height:calc(100dvh - var(--header-height))}
