@@ -14,6 +14,8 @@ const canvas=$('#chart'),ctx=canvas.getContext('2d');let width=0,height=0,geomet
 const fmt=v=>v===null?'—':(v/1e12).toLocaleString('ko-KR',{maximumFractionDigits:2,minimumFractionDigits:2});
 function option(id){const m=markets.find(m=>m.id===id);return `<label class="market-option"><input type="checkbox" value="${id}" ${selected.has(id)?'checked':''}><span>${m.name}</span><i class="swatch" style="background:${m.color}"></i></label>`;}
 $('#tree').innerHTML=`<details class="group" open><summary>주식</summary>${['stock','kospi','kosdaq'].map(option).join('')}</details><details class="group" open><summary>국내코인</summary>${['domestic','upbit','bithumb'].map(option).join('')}</details><div>${option('binance')}</div>`;
+const adSlot=$('.sidebar-ad-space'),adSize=$('#sidebar-ad-size');
+new ResizeObserver(()=>{const {width,height}=adSlot.getBoundingClientRect();adSize.textContent=`${Math.round(width)} × ${Math.round(height)} px`;}).observe(adSlot);
 $('#tree').addEventListener('change',e=>{const id=e.target.value;if(!id)return;e.target.checked?selected.add(id):selected.delete(id);render();});
 $('#reset').onclick=()=>{selected=new Set(defaults);document.querySelectorAll('#tree input').forEach(el=>el.checked=selected.has(el.value));chartStyle='dots';updateChartStyleControls();setPeriod('10y');};
 function value(row,m){if(!m.parts)return row[m.id];return m.parts.every(k=>row[k]!==null)?m.parts.reduce((s,k)=>s+row[k],0):null;}
