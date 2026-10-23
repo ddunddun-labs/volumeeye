@@ -27,13 +27,13 @@ main{margin:0 auto;align-self:start}
 
 /* The plot grows into the remaining viewport; the canvas never sets its parent's height. */
 :root{--header-height:83px}
-.shell{min-height:calc(100vh - var(--header-height));min-height:calc(100dvh - var(--header-height))}
-main{display:flex;flex-direction:column;align-self:stretch;max-width:none;margin:0}
+.shell{height:calc(100vh - var(--header-height));height:calc(100dvh - var(--header-height));min-height:0}
+main{display:flex;flex-direction:column;align-self:stretch;max-width:none;margin:0;min-height:0;padding:22px 30px 12px}
 .cards,main>footer,.chart-heading,.chart-tools,.legend,.chart-footer{flex-shrink:0}
-.chart-panel{display:flex;flex-direction:column;flex:1 0 auto;min-height:0}
-.plot{flex:1 1 300px;min-height:300px;max-height:2160px;height:auto}
+.chart-panel{display:flex;flex-direction:column;flex:1 1 0;min-height:0;padding-inline:9px}
+.plot{flex:1 1 0;min-height:0;max-height:none;height:auto}
 canvas{position:absolute;inset:0}
-@media(max-width:700px){:root{--header-height:65px}.plot{flex-basis:auto;height:clamp(300px,60dvh,2160px)}}
+@media(max-width:700px){:root{--header-height:65px}.shell{height:auto;min-height:calc(100vh - var(--header-height));min-height:calc(100dvh - var(--header-height))}main{min-height:0;padding:25px 15px 22px}.chart-panel{flex:0 0 auto}.plot{flex:none;height:clamp(300px,60dvh,620px)}}
 
 /* Five compact market summaries, independent of the plotted selection. */
 .cards{grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:20px}
@@ -51,18 +51,18 @@ canvas{position:absolute;inset:0}
 @media(max-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.card:nth-child(3n+1){border-left:0}.card:nth-child(n+4){border-top:1px solid var(--line)}}
 @media(max-width:700px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}.card{padding:11px 10px}.card:nth-child(n){border-top:0;border-left:0}.card:nth-child(2n){border-left:1px solid var(--line)}.card-value{font-size:21px}.card-title{font-size:10px}.card-date{font-size:8px}}
 
-/* Keep chart controls in one compact row while giving the plot the remaining height. */
-.chart-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;min-height:44px;padding:0 0 10px;margin-bottom:10px;border-bottom:1px solid var(--line);white-space:nowrap}
-.chart-toolbar-title{display:flex;align-items:center;gap:8px;flex:0 0 auto}
-.chart-toolbar-title h2{margin:0;font-size:15px;font-weight:500}
-.chart-unit{padding:3px 5px;border-radius:3px;background:#242932;color:#aab3c2;font-size:11px}
+/* Compact chart controls and let the plot use only the height that remains. */
+.chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:42px;padding:0 0 9px;margin-bottom:9px;border-bottom:1px solid var(--line)}
 .chart-toolbar .view-toggle{flex:0 0 auto}
-.chart-toolbar .view-toggle button{padding:6px 7px;font-size:11px}
+.chart-toolbar .view-toggle button{padding:6px 9px;font-size:11px}
+.chart-filters{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-width:0}
 .chart-toolbar .periods{flex:0 0 auto;gap:2px}
-.chart-toolbar .periods button{padding:6px 6px;font-size:11px}
-.chart-toolbar .date-tools{flex:0 0 auto;gap:4px}
-.chart-toolbar .date-tools input{width:108px;max-width:none;padding:6px 5px;font-size:11px}
-.chart-help{margin:0 0 0 auto;color:var(--muted);font-size:11px}
-@media(max-width:1280px){.chart-toolbar{flex-wrap:wrap;row-gap:8px}.chart-help{margin-left:auto}}
-@media(max-width:800px){.chart-toolbar{align-items:center;gap:8px}.chart-toolbar-title{flex:1 1 calc(100% - 130px)}.chart-toolbar .view-toggle{margin-left:auto}.chart-toolbar .periods{flex:1 1 100%;flex-wrap:wrap}.chart-toolbar .date-tools{flex:1 1 auto}.chart-help{flex:1 0 100%;margin:0;text-align:left}}
-@media(max-width:700px){.chart-toolbar{padding-bottom:10px;margin-bottom:8px}.chart-toolbar-title h2{font-size:14px}.chart-toolbar .periods button{padding:6px 8px}.chart-toolbar .date-tools input{width:115px}}
+.chart-toolbar .periods button{padding:6px 8px;font-size:11px;min-height:30px}
+.chart-toolbar .date-tools{flex:0 0 auto;gap:5px}
+.chart-toolbar .date-tools input{width:116px;max-width:none;padding:6px 5px;font-size:11px}
+.chart-unit{padding:3px 5px;border-radius:3px;background:#242932;color:#aab3c2;font-size:11px}
+.chart-footer{margin-top:3px;padding:10px 0 17px;align-items:center}
+.chart-help{margin:0;color:var(--muted);font-size:11px;text-align:right}
+@media(max-width:1180px){main{padding:20px 22px 10px}.chart-toolbar{align-items:flex-start}.chart-filters{flex-wrap:wrap;justify-content:flex-end;row-gap:6px}}
+@media(max-width:800px){.chart-toolbar{align-items:flex-start;flex-direction:column;gap:10px}.chart-filters{width:100%;justify-content:flex-start;flex-wrap:wrap;gap:7px}.chart-toolbar .periods{flex:1 1 100%;flex-wrap:wrap}.chart-toolbar .date-tools{flex:1 1 auto}}
+@media(max-width:700px){.chart-toolbar{padding-bottom:10px;margin-bottom:8px}.chart-toolbar .periods button{padding:7px 9px}.chart-toolbar .date-tools input{width:min(36vw,145px);font-size:12px}.chart-footer{flex-direction:row;flex-wrap:wrap;gap:8px;padding:11px 0 16px}.chart-help{font-size:11px}}
